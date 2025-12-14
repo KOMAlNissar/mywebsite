@@ -109,5 +109,7 @@ resource "aws_s3_object" "error" {
 
 # 6️⃣ Terraform output for website URL
 output "website_url" {
-  value = "http://${aws_s3_bucket.website_bucket.bucket}.s3-website-${var.aws_region}.amazonaws.com"
+  value = "http://${aws_s3_bucket.website_bucket.bucket}.s3-website-us-east-1.amazonaws.com"
+  description = "URL of the deployed S3 website"
 }
+
