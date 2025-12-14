@@ -4,7 +4,7 @@ provider "aws" {
 
 # 1️⃣ Create S3 bucket
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "terraform-site-komal-98765"  # <-- change this number to something unique
+  bucket = "terraform-site-komal-12345"  # <-- change this number to something unique
 }
 
 # 2️⃣ Bucket policy for public read (required, ACLs deprecated)
